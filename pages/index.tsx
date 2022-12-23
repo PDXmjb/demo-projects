@@ -22,6 +22,12 @@ export default function Home() {
           <li>
             <Link href="/demo/basic-api">Basic API</Link>
           </li>
+          <li>
+            <Link href="/demo/context">Context Demos</Link>
+          </li>
+          <li>
+            <Link href="/demo/list">List</Link>
+          </li>
         </ul>
       </main>
     </>
