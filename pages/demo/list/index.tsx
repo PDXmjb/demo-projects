@@ -1,16 +1,20 @@
 import { useState, Children } from 'react';
+import styles from './List.module.scss';
 
 const List = () => {
   const [list, setList] = useState<string[]>([]);
   const [input, setInput] = useState('');
 
-  const addItemHandler = () => {
+  const addItemHandler = (event) => {
+    event.preventDefault();
     setList((list) => [...list, input]);
     setInput('');
   };
 
-  const removeItem = (event) => {
-    setList((list) => list.filter((value) => value != event.target.innerHTML));
+  const removeItem = (index: number) => {
+    let currentList = [...list];
+    currentList.splice(index, 1);
+    setList(currentList);
   };
 
   return (
@@ -20,15 +24,20 @@ const List = () => {
         A basic component which allows adding a new item to a list of items.
         Clicking on an item removes it from the list.
       </p>
-      <input
-        type="text"
-        value={input}
-        onChange={(event) => setInput(event.target.value)}
-      />
-      <button onClick={addItemHandler}>Submit</button>
-      <ul>
+      <form className={styles['list-input-box']} onSubmit={addItemHandler}>
+        <input
+          type="text"
+          value={input}
+          placeholder="Input some text!"
+          onChange={(event) => setInput(event.target.value)}
+        />
+        <button onClick={addItemHandler}>Submit</button>
+      </form>
+      <ul className={styles['element-list']}>
         {Children.toArray(
-          list.map((item, index) => <li onClick={removeItem}>{item}</li>)
+          list.map((item, index) => (
+            <li onClick={() => removeItem(index)}>{item}</li>
+          ))
         )}
       </ul>
     </>

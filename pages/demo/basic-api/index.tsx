@@ -1,7 +1,7 @@
 const BasicAPI = () => {
   return (
     <>
-      <h2>Basic API</h2>
+      <h2>Basic API - coming soon</h2>
     </>
   );
 };
