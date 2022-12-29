@@ -23,10 +23,18 @@ export default function Home() {
             <Link href="/demo/basic-api">Basic API</Link>
           </li>
           <li>
+            <Link href="/demo/basic-api-custom-hook">
+              Basic API - Custom Hook
+            </Link>
+          </li>
+          <li>
             <Link href="/demo/context">Context Demos</Link>
           </li>
           <li>
             <Link href="/demo/list">List</Link>
+          </li>
+          <li>
+            <Link href="/demo/redux">Redux</Link>
           </li>
         </ul>
       </main>

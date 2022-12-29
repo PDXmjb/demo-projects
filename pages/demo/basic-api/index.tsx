@@ -18,7 +18,7 @@ const BasicAPI = () => {
 
   return (
     <>
-      <h2>Basic API - coming soon</h2>
+      <h2>Basic API</h2>
       <p>This page shows a basic example of fetching data from an API.</p>
       <div
         style={{
