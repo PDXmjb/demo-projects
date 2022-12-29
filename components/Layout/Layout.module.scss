@@ -30,6 +30,12 @@
     margin: 30px;
   }
 
+  section > div {
+    border: 1px solid gray;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
   ul {
     list-style-type: none;
     font-size: 20px;

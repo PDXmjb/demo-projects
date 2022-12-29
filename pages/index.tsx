@@ -36,6 +36,9 @@ export default function Home() {
           <li>
             <Link href="/demo/redux">Redux</Link>
           </li>
+          <li>
+            <Link href="/demo/js-reducer">Reducer</Link>
+          </li>
         </ul>
       </main>
     </>

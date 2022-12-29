@@ -20,13 +20,7 @@ const BasicAPI = () => {
     <>
       <h2>Basic API</h2>
       <p>This page shows a basic example of fetching data from an API.</p>
-      <div
-        style={{
-          border: '1px solid gray',
-          borderRadius: '16px',
-          padding: '16px',
-        }}
-      >
+      <div>
         <p>{data['full_name']}</p>
         <p>{data?.description}</p>
       </div>
