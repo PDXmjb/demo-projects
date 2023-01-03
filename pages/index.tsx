@@ -20,6 +20,9 @@ export default function Home() {
             <Link href="/demo/timer">Timer</Link>
           </li>
           <li>
+            <Link href="/demo/debounce-input">Debounce user input</Link>
+          </li>
+          <li>
             <Link href="/demo/basic-api">Basic API</Link>
           </li>
           <li>
