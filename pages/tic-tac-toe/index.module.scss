@@ -1,0 +1,14 @@
+.tic-tac-toe-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tic-tac-toe-row {
+}
+
+.tic-tac-toe-item {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+}
