@@ -1,9 +1,4 @@
-import React, {
-  createContext,
-  Dispatch,
-  ReactComponentElement,
-  useState,
-} from 'react';
+import React, { createContext, Dispatch, useState } from 'react';
 
 type Context = {
   count: number;

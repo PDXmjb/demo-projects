@@ -20,7 +20,11 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/demo/context/index.jsx",
-    "pages/demo/context/demo-context.js"
+    "pages/demo/context/demo-context.js",
+    "pages/demo/list/index.jsx",
+    "pages/demo/debounce-input/index.jsx",
+    "helpers/deck-of-cards.js",
+    "pages/yahtzee-dice/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,5 +1,7 @@
 import { useContext } from 'react';
-import DemoContext, { DemoContextProvider } from './demo-context';
+import DemoContext, {
+  DemoContextProvider,
+} from '../../../components/context/demo-context';
 
 const ContextDemo = () => {
   return (

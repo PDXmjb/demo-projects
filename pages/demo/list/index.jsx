@@ -2,7 +2,7 @@ import { useState, Children } from 'react';
 import styles from './List.module.scss';
 
 const List = () => {
-  const [list, setList] = useState<string[]>([]);
+  const [list, setList] = useState([]);
   const [input, setInput] = useState('');
 
   const addItemHandler = (event) => {
@@ -11,7 +11,7 @@ const List = () => {
     setInput('');
   };
 
-  const removeItem = (index: number) => {
+  const removeItem = (index) => {
     let currentList = [...list];
     currentList.splice(index, 1);
     setList(currentList);
