@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Mike Hansbrook's Demo Codebase</h1>
+        <h1>{"Mike Hansbrook's Demo Codebase"}</h1>
         <ul>
           <li>
             <Link href="/tic-tac-toe">Basic Tic-Tac-Toe game</Link>
