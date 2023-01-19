@@ -54,7 +54,7 @@ const deckOfCards = () => {
     'K♤',
   ];
 
-  const shuffle = (currentDeck: any) => {
+  const shuffle = (currentDeck) => {
     for (let i = currentDeck.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [currentDeck[i], currentDeck[j]] = [currentDeck[j], currentDeck[i]];
