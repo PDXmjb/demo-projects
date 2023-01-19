@@ -17,6 +17,9 @@ export default function Home() {
         <h1>{"Mike Hansbrook's Demo Codebase"}</h1>
         <ul>
           <li>
+            <Link href="/yahtzee-dice">Basic Yahtzee die roller</Link>
+          </li>
+          <li>
             <Link href="/tic-tac-toe">Basic Tic-Tac-Toe game</Link>
           </li>
           <li>
