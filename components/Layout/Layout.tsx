@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import styles from './Layout.module.scss';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   const router = useRouter();
 
   return (
